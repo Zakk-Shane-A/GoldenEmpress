@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.header {
+  display: flex;
+  height: 100px;
+  box-shadow: 0px 0px 5px rgba(136, 136, 136, 0.5);
+  max-width: 1920px;
+  width: 100%;
+  max-width: 1920px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  margin-top: 70px;
+  transition: 0.5s ease-in;
+}
+
+.header_wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 150px;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header_container ul {
+  display: flex;
+  gap: 5em;
+  color: rgb(0, 0, 0);
+}
+
+.header_container ul li {
+  list-style: none;
+  position: relative;
+}
+
+.header_container ul li a {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.navbar {
+  padding: 0 20px 0 0;
+}
+
+/* Ensure submenu is hidden by default */
+.navbar li ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Below the parent menu */
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 99999;
+  min-width: 150px;
+}
+
+/* Rotate dropdown arrow */
+.navbar li .dropdown::after {
+  content: url('../pictures/small_icon/down-arrow.png');
+  position: absolute;
+  right: -20px;
+  top: 3px;
+  transition: 0.2s ease-in;
+}
+
+.navbar  ul li a:hover{  color: #007bff; text-decoration: underline;}
+
+/* Rotate dropdown arrow on hover */
+.navbar li:hover > .dropdown::after {
+  transform: rotate(90deg);
+}
+
+/* Show submenu on hover */
+.navbar li:hover ul {
+  display: block;
+}
+
+/* Submenu link styles */
+.navbar li ul li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for submenu links */
+.navbar li ul li a:hover {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Logo styling */
+.main_logo img {
+  width: 150px;
+}

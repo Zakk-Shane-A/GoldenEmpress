@@ -1,0 +1,9 @@
+.contain_body{
+  background-color: rgb(66, 66, 223);
+  display: flex;
+  gap:1em;
+  
+}
+
+.main_body h1{color:white;}
+.main_body h2{color:white;}
