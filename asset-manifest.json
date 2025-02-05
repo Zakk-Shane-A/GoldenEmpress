@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "//Zakk-Shane-A.github.io/GoldenEmpress/static/css/main.9cead208.css",
+    "main.css": "//Zakk-Shane-A.github.io/GoldenEmpress/static/css/main.99fff154.css",
     "main.js": "//Zakk-Shane-A.github.io/GoldenEmpress/static/js/main.06fde783.js",
     "static/js/488.9c92ff38.chunk.js": "//Zakk-Shane-A.github.io/GoldenEmpress/static/js/488.9c92ff38.chunk.js",
     "static/media/banner_img.png": "//Zakk-Shane-A.github.io/GoldenEmpress/static/media/banner_img.5e76aa394082b39ee8c5.png",
@@ -13,12 +13,12 @@
     "static/media/shipped.png": "//Zakk-Shane-A.github.io/GoldenEmpress/static/media/shipped.d6f764205b7c156a7490.png",
     "static/media/logo.svg": "//Zakk-Shane-A.github.io/GoldenEmpress/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "//Zakk-Shane-A.github.io/GoldenEmpress/index.html",
-    "main.9cead208.css.map": "//Zakk-Shane-A.github.io/GoldenEmpress/static/css/main.9cead208.css.map",
+    "main.99fff154.css.map": "//Zakk-Shane-A.github.io/GoldenEmpress/static/css/main.99fff154.css.map",
     "main.06fde783.js.map": "//Zakk-Shane-A.github.io/GoldenEmpress/static/js/main.06fde783.js.map",
     "488.9c92ff38.chunk.js.map": "//Zakk-Shane-A.github.io/GoldenEmpress/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cead208.css",
+    "static/css/main.99fff154.css",
     "static/js/main.06fde783.js"
   ]
 }
