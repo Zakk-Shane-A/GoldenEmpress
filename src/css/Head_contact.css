@@ -1,4 +1,4 @@
-.head_contact_main{width: 1920px; max-width: 1920px; 
+.head_contact_main{width: 100%; max-width: 1920px; 
     margin-left: 50%; transform: translateX(-50%); 
     z-index: 999999;
     background-color: var(--primary_color); 
@@ -44,5 +44,13 @@
     align-items: center;
 }
 
+/*MEDIA QUERIES*/
 
+
+@media (max-width:1920px){
+    .head_contact_main{width: 100%; max-width: 100%; 
+        margin-left: unset; transform: unset; 
+    }
+    
+}
 
