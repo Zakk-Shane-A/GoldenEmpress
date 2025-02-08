@@ -107,3 +107,40 @@
 .main_logo img {
   width: 150px;
 }
+
+
+@media (max-width: 1200px) {
+  /* Hide submenu by default */
+  .navbar li ul {
+    display: none;
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  /* Show submenu when parent is focused */
+  .navbar li:focus-within ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Make the dropdown clickable */
+  .navbar li a {
+    display: block;
+  }
+
+  /* Style for dropdown arrow */
+  .navbar li .dropdown::after {
+    content: url('../pictures/small_icon/down-arrow.png');
+    transition: transform 0.2s ease-in;
+  }
+
+  /* Rotate arrow when submenu is open */
+  .navbar li:focus-within .dropdown::after {
+    transform: rotate(90deg);
+  }
+}
+
+
