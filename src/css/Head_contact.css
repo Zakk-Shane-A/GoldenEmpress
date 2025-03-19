@@ -24,6 +24,7 @@
     position: absolute;
  }
 
+ .social_icons img{width:40px; transition: 0.5s ease-in;}
  .head_text_contain section:hover{text-decoration: underline; color: white; }
 
  .head_text_contain .phone_head{position: relative;}
@@ -48,10 +49,22 @@
 
 
 @media (max-width:1920px){
-    .head_contact_main{width: 100%; max-width: 100%; 
+    .head_contact_main{width: 100%; max-width: 100vw; 
         margin-left: unset; transform: unset; 
     }
     
+}
+
+@media (max-width:1200px){
+    .head_contact_container {
+        max-width: 100vw;
+        }
+        .head_contact_main {
+            display: flex;
+            justify-content: center;}
+
+            .wrapper{max-width: unset; width: unset; margin: unset;}
+
 }
 
 

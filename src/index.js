@@ -11,11 +11,13 @@ import HeadContact from './Head_contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   
     <HeadContact />
     <Header />
-    <App />
+   
     <Banner />
     <Bottom />
+    <App />
   </React.StrictMode>
 );
 

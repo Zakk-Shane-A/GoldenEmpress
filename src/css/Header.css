@@ -9,12 +9,15 @@
   max-width: 1920px;
   margin-left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 9999;
   position: fixed;
   background-color: white;
   margin-top: 70px;
   transition: 0.5s ease-in;
+
 }
+
+.hamburger_icon{display: none; justify-content: center; align-items: center; cursor: pointer;}
 
 .header_wrapper {
   max-width: 1920px;
@@ -108,6 +111,32 @@
   width: 150px;
 }
 
+@media (max-width:1300px){
+  .hamburger_icon {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+  }
+
+  /* Remove centering styles on smaller screens */
+  .header {
+    margin-left: 0;  /* Remove centering */
+    transform: translateX(0);  /* Remove translate effect */
+    width: 100%;  /* Ensure the header takes full width */
+    margin-top: 70px;  /* Remove any fixed margins */
+    max-width: 100vw;
+  }
+
+  /* Ensure wrapper is full width */
+  .header_wrapper {
+    margin: 0;  /* Reset any margin */
+    width: 100%;  /* Make wrapper take full width */
+    padding: 0 20px;  /* Optional padding for spacing */
+  }
+}
+
+
 
 @media (max-width: 1200px) {
   /* Hide submenu by default */
@@ -142,5 +171,15 @@
     transform: rotate(90deg);
   }
 }
+@media (max-width: 1000px) {
+  .header {
+    margin-left: 0;  /* Keep this style consistent for smaller screens */
+    transform: translateX(0);  /* Remove translate effect */
+  }
 
+  .header_wrapper {
+    margin: 0 10px;  /* Adjust margin on very small screens */
+    width: 100%;  /* Ensure it takes full width */
+  }
+}
 
